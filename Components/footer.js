@@ -1,7 +1,7 @@
 const footerTemplate = document.createElement('template');
 
 footerTemplate.innerHTML = `
-    <link href="/Css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/CSS/style.css" rel="stylesheet" type="text/css" />
       <footer>
          <div class="section-2 footer wf-section">
             <div class="container-4 w-container">

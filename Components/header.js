@@ -1,10 +1,8 @@
 const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
-
- 
+  <link href="https://uploads-ssl.webflow.com/61d9916fe2a07c369574ff24/css/michaelfilipiuk.webflow.afa74fdff.css" rel="stylesheet" type="text/css" />
       <header>
-       <link href="https://uploads-ssl.webflow.com/61d9916fe2a07c369574ff24/css/michaelfilipiuk.webflow.afa74fdff.css" rel="stylesheet" type="text/css" />
         <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
             <div class="container w-container">
                 <a href="#" class="nav-link w-nav-link">SNEHITH DHAMMOJU</a>

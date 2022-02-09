@@ -1,7 +1,7 @@
 const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
- <link href="/CSS/style.css" rel="stylesheet" type="text/css" />
+ <link href="/style.css" rel="stylesheet" type="text/css" />
       <header>
         <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
             <div class="container w-container">

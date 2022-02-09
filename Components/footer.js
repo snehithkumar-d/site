@@ -2,7 +2,7 @@ const footerTemplate = document.createElement('template');
 
 footerTemplate.innerHTML = `
  <link href="https://uploads-ssl.webflow.com/61d9916fe2a07c369574ff24/css/michaelfilipiuk.webflow.afa74fdff.css" rel="stylesheet" type="text/css" />
-    <link href="/style.css" rel="stylesheet" type="text/css" />
+   
       <footer>
          <div class="section-2 footer wf-section">
             <div class="container-4 w-container">

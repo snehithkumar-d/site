@@ -5,7 +5,9 @@ footerTemplate.innerHTML = `
       <footer>
          <div class="section-2 footer wf-section">
             <div class="container-4 w-container">
-                <div class="div-block-2"><p class="paragraph footer-text"><a> Developed by </a> <a href="https://www.linkedin.com/in/snehithkumar/"> Snehith Dhammoju.</a></p></div>
+                <div class="div-block-2"><p class="paragraph footer-text"><a> Developed by </a> 
+                <a onclick="window.open('https://bit.ly/3HPZsq9')">           
+   Snehith Dhammoju.</a></p></div>
             </div>
         </div>
       </footer>

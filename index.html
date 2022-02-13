@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <div id="scroll-progress"></div>
+
+
     <meta charset="utf-8"/>
     <title>Snehith Dhammoju - Freelance Developer</title>
     <meta content="Snehith Dhammoju is a Operations Manager & Developer at TopShelf and a freelancer helping startups with top-tier websites and operation models."
@@ -22,14 +25,42 @@
             (n.className += t + "js"), ("ontouchstart" in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + "touch");
         })(window, document);
     </script>
-    <link href="https://uploads-ssl.webflow.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
-    <link href="https://uploads-ssl.webflow.com/img/webclip.png" rel="apple-touch-icon"/>
+    <link href="https://storage.googleapis.com/isometriclove.appspot.com/earth.png" rel="shortcut icon"
+          type="image/x-icon"/>
+    <link href="https://storage.googleapis.com/isometriclove.appspot.com/earth.png" rel="apple-touch-icon"/>
 
+
+    <style>
+        body {
+            min-height: 200vh;
+        }
+
+        #scroll-progress {
+            position: fixed;
+            top: 0;
+            width: 0%;
+            height: 4px;
+            background: #00eeb6;
+            z-index: 10000;
+        }
+    </style>
+    <script>
+        const scrollProgress = document.getElementById('scroll-progress');
+        const height =
+            document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop =
+                document.body.scrollTop || document.documentElement.scrollTop;
+            scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+        });
+    </script>
 </head>
 <body class="body">
 <header-component></header-component>
 
 <main>
+
     <div class="section wf-section">
         <div class="container-3 w-container">
             <div class="w-layout-grid grid">
@@ -244,5 +275,7 @@
             <script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </main>
 <footer-component></footer-component>
+
+
 </body>
 </html>

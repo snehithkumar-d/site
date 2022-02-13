@@ -29,7 +29,7 @@
           type="image/x-icon"/>
     <link href="https://storage.googleapis.com/isometriclove.appspot.com/earth.png" rel="apple-touch-icon"/>
     <div id="scroll-progress"></div>
-
+    <meta content="#080e12" name="theme-color">
 
     <style>
         body {
@@ -45,17 +45,7 @@
             z-index: 10000;
         }
     </style>
-    <script>
-        const scrollProgress = document.getElementById('scroll-progress');
-        const height =
-            document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-        window.addEventListener('scroll', () => {
-            const scrollTop =
-                document.body.scrollTop || document.documentElement.scrollTop;
-            scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
-        });
-    </script>
 </head>
 <body class="body">
 <header-component></header-component>
@@ -277,6 +267,17 @@
 </main>
 <footer-component></footer-component>
 
+<script>
+    const scrollProgress = document.getElementById('scroll-progress');
+    const height =
+        document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
+    window.addEventListener('scroll', () => {
+        const scrollTop =
+            document.body.scrollTop || document.documentElement.scrollTop;
+        scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+    });
+</script>
 </body>
+
 </html>
